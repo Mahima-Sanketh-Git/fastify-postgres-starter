@@ -3,12 +3,14 @@
 // ESM
 import Fastify from 'fastify'
 import { pool } from './db.js';
-
+import users from './routes/users.js';
 const fastify = Fastify({
   logger: true
 })
 
 fastify.decorate('pg', pool);
+
+fastify.register(users);
 
 
 // Declare a route
