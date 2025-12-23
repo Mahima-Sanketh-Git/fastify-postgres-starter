@@ -1,0 +1,16 @@
+{
+  "name": "fastify-with-postgressql",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@fastify/postgres": "^6.0.2",
+    "fastify": "^5.6.2",
+    "nodemon": "^3.1.11",
+    "pg": "^8.16.3"
+  }
+}
